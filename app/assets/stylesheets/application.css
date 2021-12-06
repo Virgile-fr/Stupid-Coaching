@@ -13,3 +13,18 @@
  *= require_tree .
  *= require_self
  */
+
+ body{
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+ }
+
+.content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

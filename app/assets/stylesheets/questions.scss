@@ -1,0 +1,61 @@
+// Place all the styles related to the questions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+%flex_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+$hadow: 0 0 30px  rgba(0, 0, 0, 0.2);
+
+.div {
+  @extend %flex_center;
+  padding: 30px;
+  background-color:rgba(0, 0, 0, 0.2);
+  color: rgba(255, 255, 255, 0.898);
+  border-radius: 30px;
+  box-shadow: $hadow;
+
+}
+
+.div h1{
+  margin-block-start: 0em;
+  text-shadow: $hadow;
+}
+
+.div input{
+  border-radius: 30px;
+  border: solid rgba(255, 255, 255, 0.775) 2px;
+  padding: 10px 10px;
+  margin: 0 2px;
+  box-shadow: $hadow;
+  text-decoration: none;
+  background: none;
+  color: rgba(255, 255, 255, 0.857);
+  text-align: center;
+  font-weight: bolder;
+}
+
+#btn{
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  color: blue;
+  background-color: white;
+  font-weight: bold;
+}
+
+.lien {
+  @extend %flex_center;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  background-color: blue;
+  color: white;
+  &:hover {
+  box-shadow: $hadow;
+}
+}
